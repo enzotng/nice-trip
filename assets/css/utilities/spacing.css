@@ -1,0 +1,15 @@
+.margin-sm {
+    margin: var(--spacing-sm);
+}
+
+.padding-lg {
+    padding: var(--spacing-lg);
+}
+
+.margin-top-md {
+    margin-top: var(--spacing-md);
+}
+
+.margin-bottom-xs {
+    margin-bottom: var(--spacing-xs);
+}

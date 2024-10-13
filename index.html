@@ -5,23 +5,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
     <title>Nice Trip - Explore the world</title>
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Nice Trip</h1>
-                <p>Explore the world with us. Discover new places, cultures, and adventures.</p>
-                <a href="#explore" class="btn">Explore Now</a>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/images/logo/logo__nicetrip-default.svg" alt="Nice Trip Logo" class="header__logo-img">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Hébergements</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Activités</a></li>
+                <li class="header__nav-item header__nav-item--cta"><a href="#" class="header__nav-link">S'inscrire</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Préparez votre prochain voyage !</h1>
+            <p class="hero__subtitle">Lisez des avis et obtenez des conseils de voyage de notre communauté sur les
+                hébergements et les activités.</p>
+            <p class="hero__text">En plein centre ville ou en pleine nature !</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="search-location">
+            <input type="text" class="search-location__input" placeholder="Biarritz, France">
+        </div>
+
+        <div class="filters">
+            <button class="filters__btn">Insolite</button>
+            <button class="filters__btn">Économique</button>
+            <button class="filters__btn">Familial</button>
+            <button class="filters__btn">Animaux autorisés</button>
+        </div>
+
+        <section class="section section--hebergements">
+            <h2 class="section__title">Hébergements</h2>
+            <div class="section__cards">
+                <article class="card card--hebergement">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 1"
+                        class="card__image">
+                    <h3 class="card__title">Hébergement 1</h3>
+                    <p class="card__price">Nuit à partir de 25€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+                <article class="card card--hebergement">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 1"
+                        class="card__image">
+                    <h3 class="card__title">Hébergement 1</h3>
+                    <p class="card__price">Nuit à partir de 25€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+                <article class="card card--hebergement">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 1"
+                        class="card__image">
+                    <h3 class="card__title">Hébergement 1</h3>
+                    <p class="card__price">Nuit à partir de 25€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+                <article class="card card--hebergement">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 2"
+                        class="card__image">
+                    <h3 class="card__title">Hébergement 2</h3>
+                    <p class="card__price">Nuit à partir de 30€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+                <article class="card card--hebergement">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 3"
+                        class="card__image">
+                    <h3 class="card__title">Hébergement 3</h3>
+                    <p class="card__price">Nuit à partir de 28€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+                <article class="card card--hebergement">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 4"
+                        class="card__image">
+                    <h3 class="card__title">Hébergement 4</h3>
+                    <p class="card__price">Nuit à partir de 35€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+            </div>
+
+            <aside class="aside aside--popular">
+                <h2 class="aside__title">Les plus populaires</h2>
+                <div class="aside__cards">
+                    <article class="card card--popular">
+                        <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Populaire 1"
+                            class="card__image">
+                        <h3 class="card__title">Populaire 1</h3>
+                        <p class="card__price">Nuit à partir de 30€</p>
+                        <div class="card__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <button class="card__button">Afficher plus</button>
+                    </article>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section section--activites">
+            <h2 class="section__title">Activités</h2>
+            <div class="section__cards">
+                <article class="card card--activite card--large">
+                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité 1"
+                        class="card__image">
+                    <h3 class="card__title">Activité 1</h3>
+                    <p class="card__price">À partir de 20€</p>
+                    <div class="card__rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button class="card__button">Afficher plus</button>
+                </article>
+
+                <div class="section__subcards">
+                    <article class="card card--activite">
+                        <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité 2"
+                            class="card__image">
+                        <h3 class="card__title">Activité 2</h3>
+                        <p class="card__price">À partir de 15€</p>
+                        <div class="card__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <button class="card__button">Afficher plus</button>
+                    </article>
+
+                    <article class="card card--activite">
+                        <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité 3"
+                            class="card__image">
+                        <h3 class="card__title">Activité 3</h3>
+                        <p class="card__price">À partir de 18€</p>
+                        <div class="card__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <button class="card__button">Afficher plus</button>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+        <div class="footer__column">
+            <h3 class="footer__title">À propos</h3>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Fonctionnement du site</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Conditions générales de vente</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h3 class="footer__title">Nos hébergements</h3>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Charte qualité</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Soumettre votre hébergement</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h3 class="footer__title">Assistance</h3>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">F.A.Q</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Centre d'aide</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Nous contacter</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

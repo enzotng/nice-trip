@@ -1,0 +1,25 @@
+/* Import des variables */
+@import url('./base/variables.css');
+
+/* Reset CSS */
+@import url('./base/reset.css');
+
+/* Import des layouts (structure du site) */
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+@import url('./layout/hero.css');
+@import url('./layout/main.css');
+
+/* Import des composants réutilisables */
+@import url('./components/button.css');
+@import url('./components/card.css');
+
+/* Import des utilitaires */
+@import url('./utilities/font.css');
+@import url('./utilities/spacing.css');
+@import url('./utilities/helpers.css');
+
+/* Import des media queries pour la responsivité */
+@import url('./responsive/mobile.css');
+@import url('./responsive/tablet.css');
+@import url('./responsive/desktop.css');
