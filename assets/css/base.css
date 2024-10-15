@@ -1,25 +1,28 @@
-/* Import des variables */
+/* === Import des Variables === */
 @import url('./base/variables.css');
 
-/* Reset CSS */
+/* === Reset CSS === */
 @import url('./base/reset.css');
 
-/* Import des layouts (structure du site) */
+/* === Import des Layouts === */
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 @import url('./layout/hero.css');
 @import url('./layout/main.css');
+@import url('./layout/aside.css');
 
-/* Import des composants réutilisables */
+/* === Import des Composants === */
 @import url('./components/button.css');
 @import url('./components/card.css');
+@import url('./components/searchbar.css');
+@import url('./components/filter.css');
 
-/* Import des utilitaires */
+/* === Import des Utilities === */
 @import url('./utilities/font.css');
 @import url('./utilities/spacing.css');
 @import url('./utilities/helpers.css');
 
-/* Import des media queries pour la responsivité */
+/* === Import des Media Queries === */
 @import url('./responsive/mobile.css');
 @import url('./responsive/tablet.css');
 @import url('./responsive/desktop.css');

@@ -5,233 +5,390 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <meta name="description"
+        content="Nice Trip - Explorez le monde avec nos hébergements et activités sélectionnés. Préparez votre voyage en toute sécurité.">
+    <meta name="keywords" content="voyage, hébergement, activités, tourisme, aventure">
+    <meta name="author" content="Nice Trip">
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-    <title>Nice Trip - Explore the world</title>
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>Nice Trip - Explorez le monde</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="./assets/images/logo/logo__nicetrip-default.svg" alt="Nice Trip Logo" class="header__logo-img">
+    <header class="header" role="banner">
+        <!-- Container pour le logo et le CTA -->
+        <div class="header__top">
+            <div class="header__logo">
+                <img src="./assets/images/logo/svg/logo__nicetrip-default.svg" alt="Logo de Nice Trip"
+                    class="header__logo-img">
+            </div>
+            <a href="#" class="header__cta" aria-label="Lien vers l'inscription">S'inscrire</a>
         </div>
-        <nav class="header__nav">
+
+        <!-- Navigation Mobile -->
+        <nav class="header__nav--mobile" aria-label="Navigation principale">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Hébergements</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Activités</a></li>
-                <li class="header__nav-item header__nav-item--cta"><a href="#" class="header__nav-link">S'inscrire</a>
+                <li class="header__nav-item"><a href="#section--hebergements" class="header__nav-link">Hébergements</a>
                 </li>
+                <li class="header__nav-item"><a href="#section--activites" class="header__nav-link">Activités</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navigation Desktop -->
+        <nav class="header__nav" aria-label="Navigation principale">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#section--hebergements" class="header__nav-link">Hébergements</a>
+                </li>
+                <li class="header__nav-item"><a href="#section--activites" class="header__nav-link">Activités</a></li>
+                <li class="header__nav-item header__nav-item--cta"><a href="#" class="header__nav-link">S'inscrire</a>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+
+    <section class="hero" aria-labelledby="hero-title">
         <div class="hero__content">
-            <h1 class="hero__title">Préparez votre prochain voyage !</h1>
+            <h1 id="hero-title" class="hero__title">Préparez votre prochain voyage !</h1>
             <p class="hero__subtitle">Lisez des avis et obtenez des conseils de voyage de notre communauté sur les
                 hébergements et les activités.</p>
-            <p class="hero__text">En plein centre ville ou en pleine nature !</p>
+            <p class="hero__text">En plein centre-ville ou en pleine nature !</p>
         </div>
     </section>
 
-    <main class="main-content">
-        <div class="search-location">
-            <input type="text" class="search-location__input" placeholder="Biarritz, France">
-        </div>
-
-        <div class="filters">
-            <button class="filters__btn">Insolite</button>
-            <button class="filters__btn">Économique</button>
-            <button class="filters__btn">Familial</button>
-            <button class="filters__btn">Animaux autorisés</button>
-        </div>
-
-        <section class="section section--hebergements">
-            <h2 class="section__title">Hébergements</h2>
-            <div class="section__cards">
-                <article class="card card--hebergement">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 1"
-                        class="card__image">
-                    <h3 class="card__title">Hébergement 1</h3>
-                    <p class="card__price">Nuit à partir de 25€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
-                <article class="card card--hebergement">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 1"
-                        class="card__image">
-                    <h3 class="card__title">Hébergement 1</h3>
-                    <p class="card__price">Nuit à partir de 25€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
-                <article class="card card--hebergement">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 1"
-                        class="card__image">
-                    <h3 class="card__title">Hébergement 1</h3>
-                    <p class="card__price">Nuit à partir de 25€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
-                <article class="card card--hebergement">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 2"
-                        class="card__image">
-                    <h3 class="card__title">Hébergement 2</h3>
-                    <p class="card__price">Nuit à partir de 30€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
-                <article class="card card--hebergement">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 3"
-                        class="card__image">
-                    <h3 class="card__title">Hébergement 3</h3>
-                    <p class="card__price">Nuit à partir de 28€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
-                <article class="card card--hebergement">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Hébergement 4"
-                        class="card__image">
-                    <h3 class="card__title">Hébergement 4</h3>
-                    <p class="card__price">Nuit à partir de 35€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
+    <main class="main-content" role="main">
+        <div class="searchbar" role="search">
+            <div class="searchbar-wrapper">
+                <div class="searchbar-left">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </div>
+                <div class="searchbar-center">
+                    <label for="search-input" class="hidden">Recherche d'hébergements ou d'activités</label>
+                    <input id="search-input" type="text" class="searchbar-input" maxlength="2048" name="q"
+                        autocapitalize="off" autocomplete="off" title="Recherche" role="combobox"
+                        placeholder="Biarritz, France">
+                </div>
+                <button class="searchbar-right" aria-label="Lancer la recherche">Rechercher</button>
             </div>
+        </div>
 
-            <aside class="aside aside--popular">
-                <h2 class="aside__title">Les plus populaires</h2>
-                <div class="aside__cards">
-                    <article class="card card--popular">
-                        <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Populaire 1"
-                            class="card__image">
-                        <h3 class="card__title">Populaire 1</h3>
-                        <p class="card__price">Nuit à partir de 30€</p>
-                        <div class="card__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <button class="card__button">Afficher plus</button>
-                    </article>
+        <div class="filters__wrapper" aria-labelledby="filters-title">
+            <h2 id="filters-title">Filtres</h2>
+            <form class="filters__form" action="#" method="GET">
+                <div class="filters__container" role="group" aria-labelledby="filters-title">
+                    <div class="filters__btn-wrapper">
+                        <input type="radio" id="filter-insolite" name="filter" value="insolite" class="filters__input">
+                        <label for="filter-insolite" class="filters__btn">
+                            <div class="filters__btn-icon">
+                                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                            </div>
+                            Insolite
+                        </label>
+                    </div>
+                    <div class="filters__btn-wrapper">
+                        <input type="radio" id="filter-economique" name="filter" value="economique"
+                            class="filters__input">
+                        <label for="filter-economique" class="filters__btn">
+                            <div class="filters__btn-icon">
+                                <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                            </div>
+                            Économique
+                        </label>
+                    </div>
+                    <div class="filters__btn-wrapper">
+                        <input type="radio" id="filter-familial" name="filter" value="familial" class="filters__input">
+                        <label for="filter-familial" class="filters__btn">
+                            <div class="filters__btn-icon">
+                                <i class="fa-solid fa-person" aria-hidden="true"></i>
+                            </div>
+                            Familial
+                        </label>
+                    </div>
+                    <div class="filters__btn-wrapper">
+                        <input type="radio" id="filter-animaux" name="filter" value="animaux" class="filters__input">
+                        <label for="filter-animaux" class="filters__btn">
+                            <div class="filters__btn-icon">
+                                <i class="fa-solid fa-dog" aria-hidden="true"></i>
+                            </div>
+                            Animaux autorisés
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <section class="section" id="section--hebergements" aria-labelledby="hebergements-title">
+                <div class="section__header">
+                    <h2 id="hebergements-title">Hébergements</h2>
+                    <i class="fa-solid fa-bed" aria-hidden="true"></i>
+                </div>
+                <div class="section__cards" role="list">
+                    <a href="#" class="card__link">
+                        <article class="card card--hebergement" role="listitem">
+                            <img src="./assets/images/hebergements/avif/marcus-loke-wqjvwu_hzfo-unsplash.avif"
+                                alt="Auberge Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Auberge Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>25€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--hebergement" role="listitem">
+                            <img src="./assets/images/hebergements/avif/fred-kleber-gtbaxavlvsg-unsplash.avif"
+                                alt="Appartement Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Appartement Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>52€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--hebergement" role="listitem">
+                            <img src="./assets/images/hebergements/avif/reisetopia-b8wigxa_pfu-unsplash.avif"
+                                alt="Hôtel Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Hôtel Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>76€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--hebergement" role="listitem">
+                            <img src="./assets/images/hebergements/avif/annie-spratt-eg1qciitaua-unsplash.avif"
+                                alt="Hôtel Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Hôtel Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>46€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--hebergement" role="listitem">
+                            <img src="./assets/images/hebergements/avif/nicate-lee-kt-zyaiwbe0-unsplash.avif"
+                                alt="Auberge Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Auberge Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>23€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--hebergement" role="listitem">
+                            <img src="./assets/images/hebergements/avif/febrian-zakaria-m6s1wvfw68a-unsplash.avif"
+                                alt="Hôtel Chez Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Hôtel Chez Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>96€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <a href="#" class="bold" aria-label="Afficher plus d'hébergements">Afficher plus</a>
+            </section>
+
+            <aside class="aside" aria-labelledby="popular-title">
+                <div class="section__header">
+                    <h2 id="popular-title">Les plus populaires</h2>
+                    <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                </div>
+                <div class="aside__cards" role="list">
+                    <a href="#" class="card__link">
+                        <article class="card card--popular" role="listitem">
+                            <img src="./assets/images/hebergements/avif/emile-guillemot-bj_rcsc5xfe-unsplash.avif"
+                                alt="Hôtel Le Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Hôtel Le Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>128€</strong></p>
+                                <div class="card__rating" aria-label="Note de 5 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--popular" role="listitem">
+                            <img src="./assets/images/hebergements/avif/aw-creative-vgs8z60yt2c-unsplash.avif"
+                                alt="Palace Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Palace Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>71€</strong></p>
+                                <div class="card__rating" aria-label="Note de 4 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid unfilled fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--popular" role="listitem">
+                            <img src="./assets/images/hebergements/avif/febrian-zakaria-sjvu0thccqa-unsplash.avif"
+                                alt="Hôtel Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Hôtel Lorem</h3>
+                                <p class="card__price">Nuit à partir de <strong>68€</strong></p>
+                                <div class="card__rating" aria-label="Note de 4 sur 5">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid unfilled fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
                 </div>
             </aside>
-        </section>
+        </div>
 
-        <section class="section section--activites">
-            <h2 class="section__title">Activités</h2>
-            <div class="section__cards">
-                <article class="card card--activite card--large">
-                    <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité 1"
-                        class="card__image">
-                    <h3 class="card__title">Activité 1</h3>
-                    <p class="card__price">À partir de 20€</p>
-                    <div class="card__rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <button class="card__button">Afficher plus</button>
-                </article>
+        <section class="section" id="section--activites" aria-labelledby="activites-title">
+            <div class="section__header">
+                <h2 id="activites-title">Activités</h2>
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            </div>
 
-                <div class="section__subcards">
-                    <article class="card card--activite">
-                        <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité 2"
-                            class="card__image">
-                        <h3 class="card__title">Activité 2</h3>
-                        <p class="card__price">À partir de 15€</p>
-                        <div class="card__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <button class="card__button">Afficher plus</button>
-                    </article>
-
-                    <article class="card card--activite">
-                        <img src="./assets/images/hebergements/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité 3"
-                            class="card__image">
-                        <h3 class="card__title">Activité 3</h3>
-                        <p class="card__price">À partir de 18€</p>
-                        <div class="card__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <button class="card__button">Afficher plus</button>
-                    </article>
+            <div class="section__columns">
+                <div class="column column--large">
+                    <a href="#" class="card__link">
+                        <article class="card card--activite">
+                            <img src="./assets/images/activites/avif/reno-laithienne-qugjhdy5fyk-unsplash.avif"
+                                alt="Port Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Port Lorem</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="column column--small">
+                    <a href="#" class="card__link">
+                        <article class="card card--activite">
+                            <img src="./assets/images/activites/avif/paul-hermann-qftrldqirhi-unsplash.avif"
+                                alt="Fort de Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Fort de Lorem</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--activite">
+                            <img src="./assets/images/activites/avif/kevin-hikari-rv-qd1l-vxg-unsplash.avif"
+                                alt="Îles de Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Îles de Lorem</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="column column--large">
+                    <a href="#" class="card__link">
+                        <article class="card card--activite">
+                            <img src="./assets/images/activites/avif/yan-sockalingum-nr8-cbcn3ai-unsplash.avif"
+                                alt="Parc National des Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Parc National des Lorem</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="column column--small">
+                    <a href="#" class="card__link">
+                        <article class="card card--activite">
+                            <img src="./assets/images/activites/avif/florian-wehde-xw9e8gdotxi-unsplash.avif"
+                                alt="Monument Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Monument Lorem</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="card__link">
+                        <article class="card card--activite">
+                            <img src="./assets/images/activites/avif/lena-paulin-wh2-ejodcv0-unsplash.avif"
+                                alt="Parc Lorem" class="card__image">
+                            <div class="card__content">
+                                <h3 class="heading-h3">Parc Lorem</h3>
+                            </div>
+                        </article>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__column">
-            <h3 class="footer__title">À propos</h3>
-            <ul class="footer__list">
-                <li class="footer__item"><a href="#" class="footer__link">Fonctionnement du site</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Conditions générales de vente</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Politique de confidentialité</a></li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <h3 class="footer__title">Nos hébergements</h3>
-            <ul class="footer__list">
-                <li class="footer__item"><a href="#" class="footer__link">Charte qualité</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Soumettre votre hébergement</a></li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <h3 class="footer__title">Assistance</h3>
-            <ul class="footer__list">
-                <li class="footer__item"><a href="#" class="footer__link">F.A.Q</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Centre d'aide</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Nous contacter</a></li>
-            </ul>
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__column">
+                <h3 class="footer__title">À propos</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Fonctionnement du site</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Conditions générales de vente</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Nos hébergements</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Charte qualité</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Soumettre votre hébergement</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Assistance</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">F.A.Q</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Centre d'aide</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Nous contacter</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

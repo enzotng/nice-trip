@@ -1,32 +1,71 @@
+/* === Card Link === */
+.card__link .height-full {
+    height: 100%;
+}
+
+/* === Card === */
 .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
     background-color: var(--white-500);
     border-radius: var(--border-radius-md);
-    box-shadow: var(--shadow-md);
-    padding: var(--spacing-md);
-    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-duration) var(--transition-easing);
+    cursor: pointer;
 }
 
+.card:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 1);
+    color: var(--blue-500);
+}
+
+/* === Card Image === */
 .card__image {
     width: 100%;
-    border-radius: var(--border-radius-sm);
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
 }
 
-.card__title {
-    font-size: var(--font-size-large);
-    margin: var(--spacing-sm) 0;
+/* === Popular Card Image === */
+.card--popular .card__image {
+    border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
 }
 
-.card__price {
+/* === Activite Card Image === */
+.card--activite .card__image {
+    height: 300px;
+}
+
+/* === Card Content === */
+.card__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: 0 var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
+}
+
+/* === Card Price === */
+.card__content .card__price {
     font-size: var(--font-size);
-    margin-bottom: var(--spacing-sm);
 }
 
-.card__rating {
+/* === Card Price Strong === */
+.card__content .card__price strong {
+    font-weight: var(--font-weight-bold);
+}
+
+/* === Card Rating === */
+.card__content .card__rating {
     color: var(--orange-500);
-    margin-bottom: var(--spacing-md);
 }
 
-.card__button {
+/* === Card Button === */
+.card__content .card__button {
     background-color: var(--orange-500);
     color: var(--white-500);
     padding: var(--spacing-sm) var(--spacing-md);
@@ -36,6 +75,6 @@
     transition: background-color var(--transition-duration) var(--transition-easing);
 }
 
-.card__button:hover {
+.card__content .card__button:hover {
     background-color: var(--blue-500);
 }

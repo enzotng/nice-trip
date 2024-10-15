@@ -1,0 +1,12 @@
+/* === Aside === */
+
+.aside {
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+.aside,
+.aside__cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}

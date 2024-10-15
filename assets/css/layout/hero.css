@@ -1,36 +1,51 @@
+/* === Hero Section === */
 .hero {
     position: relative;
-    height: var(--hero-height);
-    background-image: url('../../images/backgrounds/kilyan-sockalingum-NR8-cBCN3aI-unsplash.webp');
+    background-image: url('../../images/backgrounds/avif/yan-sockalingum-nr8-cbcn3ai-unsplash.avif');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: var(--spacing-lg) var(--spacing-md);
+    height: 60vh;
+    height: 60dvh;
 }
 
+/* === Hero Content === */
 .hero__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--black-500);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-xs);
     border-radius: var(--border-radius-md);
     backdrop-filter: blur(var(--backdrop-blur));
     -webkit-backdrop-filter: blur(var(--backdrop-blur));
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    width: 90%;
+    transform: translateX(-50%);
 }
 
+/* === Hero Title === */
 .hero__title {
-    font-size: 2rem;
-    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-h1);
+    color: var(--black-500);
 }
 
+/* === Hero Subtitle === */
 .hero__subtitle {
     font-size: 1.125rem;
-    margin-bottom: var(--spacing-md);
+    color: var(--black-500);
 }
 
+/* === Hero Text === */
 .hero__text {
     font-size: var(--font-size);
-    color: var(--text-color-light);
+    color: var(--black-500);
 }
